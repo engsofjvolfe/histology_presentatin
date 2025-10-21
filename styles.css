@@ -32,7 +32,8 @@ body {
   width: 100%;
   overflow: hidden;
   background: #0f1724;
-  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--muted);
@@ -90,6 +91,7 @@ body {
 .slide-number {
   font-weight: 700;
   color: var(--primary-dark);
+  display: none;
 }
 
 /* ==========================================================================
@@ -99,10 +101,10 @@ body {
 .slide-title {
   font-weight: 800;
   color: var(--primary-dark);
-  font-size: clamp(2rem, 3.5vh, 2.6rem);
+  font-size: clamp(3rem, 4vh, 2.6rem);
   line-height: 1.1;
-  margin-bottom: clamp(6px, 1vh, 12px);
-  padding-bottom: clamp(4px, 0.7vh, 8px);
+  margin-bottom: clamp(8px, 1.2vh, 16px);
+  padding-bottom: clamp(6px, 0.9vh, 10px);
   border-bottom: 3px solid rgba(91, 62, 230, 0.15);
   flex-shrink: 0;
 }
@@ -261,8 +263,8 @@ strong {
 .bmp-members {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: clamp(9px, 1.4vh, 14px);
-  flex: 1 1 auto;
+  gap: clamp(10px, 1.5vh, 16px);
+  flex: 1;
   min-height: 0;
 }
 
@@ -270,8 +272,8 @@ strong {
 .content-2col-split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: clamp(12px, 2vh, 20px);
-  flex: 1 1 auto;
+  gap: clamp(16px, 2.5vh, 24px);
+  flex: 1;
   align-items: stretch;
   min-height: 0;
 }
@@ -302,13 +304,12 @@ strong {
   border: 1px solid var(--border);
   border-left: 3px solid var(--primary);
   border-radius: 8px;
-  padding: clamp(10px, 1.7vh, 16px);
+  padding: clamp(12px, 2vh, 18px);
   box-shadow: 0 2px 8px var(--shadow);
   display: flex;
   flex-direction: column;
-  gap: clamp(5px, 0.9vh, 9px);
+  gap: clamp(6px, 1vh, 10px);
   min-height: 0;
-  flex-shrink: 1;
   overflow: hidden;
 }
 
@@ -667,7 +668,11 @@ strong {
   flex-direction: column;
   align-items: center;
   gap: clamp(7px, 1.2vh, 10px);
-  background: linear-gradient(135deg, rgba(91, 62, 230, 0.04), rgba(191, 166, 255, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(91, 62, 230, 0.04),
+    rgba(191, 166, 255, 0.08)
+  );
   border: 2px solid rgba(91, 62, 230, 0.2);
   border-radius: 8px;
   padding: clamp(10px, 1.7vh, 14px);
@@ -901,7 +906,7 @@ strong {
   background: linear-gradient(135deg, #f9fafb, #f3f4f6);
   border: 2px dashed #d1d5db;
   border-radius: 8px;
-  padding: clamp(12px, 2.2vh, 22px);
+  padding: clamp(16px, 3vh, 28px);
   text-align: center;
   color: #9ca3af;
   font-style: italic;
@@ -909,9 +914,9 @@ strong {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: clamp(0.8rem, 1.45vh, 0.92rem);
-  line-height: 1.45;
-  flex: 1 1 auto;
+  font-size: clamp(0.88rem, 1.6vh, 1rem);
+  line-height: 1.5;
+  flex: 1;
   min-height: 0;
 }
 
@@ -940,51 +945,52 @@ strong {
    ========================================================================== */
 
 .nav-controls {
+  height: 2rem;
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1400;
-  pointer-events: none;
   display: flex;
-  justify-content: space-between;
-  padding: 0 clamp(20px, 3vw, 40px) clamp(20px, 3vh, 40px);
+  gap: 12px;
+  align-items: center;
+  background: rgba(15, 23, 36, 0.95);
+  border-radius: 999px;
+  box-shadow: 0 12px 32px rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(10px);
 }
 
 .nav-btn {
-  pointer-events: auto;
-  background: rgba(91, 62, 230, 0.12);
-  color: rgba(91, 62, 230, 0.8);
-  border: none;
-  width: clamp(36px, 5vh, 48px);
-  height: clamp(36px, 5vh, 48px);
-  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 8px 16px;
+  border-radius: 8px;
   cursor: pointer;
   font-weight: 700;
-  font-size: clamp(1.2rem, 2.5vh, 1.6rem);
-  transition: all 0.25s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 8px rgba(91, 62, 230, 0.15);
-  backdrop-filter: blur(8px);
-  line-height: 1;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+  transition: all 0.2s;
 }
 
 .nav-btn:hover:not(:disabled) {
-  background: rgba(91, 62, 230, 0.2);
-  color: rgba(91, 62, 230, 1);
-  transform: scale(1.08);
-  box-shadow: 0 4px 12px rgba(91, 62, 230, 0.25);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 .nav-btn:disabled {
-  opacity: 0.15;
+  opacity: 0.3;
   cursor: not-allowed;
 }
 
 .indicator {
-  display: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  min-width: 60px;
+  text-align: center;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -1277,7 +1283,7 @@ td {
 }
 
 [data-slide="17"] .stage-box li {
-  font-size: clamp(1.0rem, 1.45vh, 0.92rem);
+  font-size: clamp(1rem, 1.45vh, 0.92rem);
   margin-bottom: clamp(2px, 0.5vh, 4px);
 }
 
@@ -1308,7 +1314,7 @@ td {
 }
 
 [data-slide="18"] .hormone-preview h4 {
-  font-size: clamp(1.08rem, 1.55vh, 1.0rem);
+  font-size: clamp(1.08rem, 1.55vh, 1rem);
   margin-bottom: clamp(3px, 0.6vh, 5px);
 }
 
