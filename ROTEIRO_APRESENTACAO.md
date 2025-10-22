@@ -24,7 +24,9 @@
 
 ### **SLIDE 3 - Introdução ao Tecido Ósseo**
 **Fala sugerida:**
-"O tecido ósseo é um tecido conjuntivo altamente dinâmico e vascularizado. Ele é composto por uma matriz extracelular mineralizada, rica em colágeno tipo I e cristais de hidroxiapatita, que confere rigidez e resistência. Este tecido desempenha funções cruciais como suporte estrutural, proteção de órgãos vitais, reservatório de cálcio e fósforo, além de abrigar a medula óssea responsável pela hematopoiese."
+"O tecido ósseo é um tecido conjuntivo altamente dinâmico e vascularizado. Ele é composto por uma matriz extracelular mineralizada, rica em colágeno tipo I e cristais de hidroxiapatita, que confere rigidez e resistência. Este tecido desempenha funções cruciais como suporte estrutural, proteção de órgãos vitais, reservatório de cálcio e fósforo, além de abrigar a medula óssea responsável pela hematopoiese.
+
+**[APONTANDO PARA A IMAGEM]** Observem nesta ilustração a estrutura tridimensional do tecido ósseo. À esquerda, vemos o osso compacto, que forma a camada externa densa do osso. Notem os sistemas de Havers, aquelas estruturas concêntricas em formato de anéis - cada uma dessas unidades contém um canal central por onde passam vasos sanguíneos e nervos, essenciais para nutrir o tecido. À direita, temos o osso esponjoso, com sua estrutura trabecular em formato de favo de mel, que é mais leve mas mantém resistência mecânica. E aqui neste detalhe ampliado, podemos ver os componentes moleculares: as fibras de colágeno tipo I entrelaçadas, como cordas que dão flexibilidade, e os cristais de hidroxiapatita, que são esses pequenos cristais minerais que conferem a dureza característica do osso. É essa combinação perfeita de colágeno e minerais que torna o osso simultaneamente forte e resistente."
 
 **Relação com PDF:** Página 3, parágrafo 1 - "Bone tissue is a highly dynamic and vascularized connective tissue composed of a mineralized extracellular matrix..."
 
@@ -59,7 +61,9 @@
 
 ### **SLIDE 7 - Por que Organismos Modelo?**
 **Fala sugerida:**
-"Para entender os mecanismos de regeneração óssea, os cientistas utilizam organismos modelo que apresentam capacidades regenerativas excepcionais. Estes modelos nos permitem estudar genes, vias de sinalização e processos celulares que podem ser aplicados à medicina regenerativa humana. Vamos começar com o mais fascinante deles: o axolote."
+"Para entender os mecanismos de regeneração óssea, os cientistas utilizam organismos modelo que apresentam capacidades regenerativas excepcionais. Estes modelos nos permitem estudar genes, vias de sinalização e processos celulares que podem ser aplicados à medicina regenerativa humana.
+
+**[APRESENTANDO A IMAGEM]** Aqui temos nossos três 'heróis' da regeneração. À esquerda, o axolote - reparem nas duas estrelas acima dele, indicando sua capacidade regenerativa excepcional, a mais alta entre todos os vertebrados. Este anfíbio pode regenerar membros inteiros com perfeição. No centro, temos o zebrafish, marcado com uma estrela e um microscópio, simbolizando sua excelente capacidade regenerativa aliada à vantagem de ser transparente quando jovem, permitindo observar processos regenerativos em tempo real. E à direita, o Xenopus - notem o X e a seta descendente. Isso representa uma característica única: ele perde capacidade regenerativa ao amadurecer. Os girinos regeneram muito bem, mas os adultos não. Isso é fascinante porque os humanos também passam por essa perda durante o desenvolvimento, tornando o Xenopus um modelo ideal para estudar por que perdemos essa capacidade. Vamos começar explorando o mais fascinante deles: o axolote."
 
 **Relação com PDF:** Página 4, parágrafo 2 - "Model organisms with exceptional regenerative capabilities provide valuable insights..."
 
@@ -67,7 +71,19 @@
 
 ### **SLIDE 8 - Axolote - Ambystoma mexicanum**
 **Fala sugerida:**
-"O axolote, Ambystoma mexicanum, é uma salamandra neotênica nativa do México. Este animal é considerado o 'campeão da regeneração' devido à sua capacidade extraordinária de regenerar membros inteiros, incluindo ossos, músculos, nervos e vasos sanguíneos. Ao contrário dos mamíferos, o axolote pode regenerar estruturas complexas sem formação de cicatriz e com restauração completa da função."
+"O axolote, Ambystoma mexicanum, é uma salamandra neotênica nativa do México. Este animal é considerado o 'campeão da regeneração' devido à sua capacidade extraordinária de regenerar membros inteiros, incluindo ossos, músculos, nervos e vasos sanguíneos. Ao contrário dos mamíferos, o axolote pode regenerar estruturas complexas sem formação de cicatriz e com restauração completa da função.
+
+**[DESCREVENDO A IMAGEM EM DETALHE]** Esta ilustração mostra de forma elegante o processo completo de regeneração de um membro de axolote. No topo, vemos o próprio axolote com suas características brânquias externas plumosas. Agora, acompanhem comigo a linha do tempo da regeneração, que está representada aqui de cima para baixo:
+
+**Primeiro estágio - Amputação:** Aqui temos o membro recém-amputado. Notem o corte limpo que expõe os diferentes tecidos internos.
+
+**Segundo estágio - Epiderme de Ferida:** Nas primeiras 12-24 horas, uma camada fina de epiderme cobre rapidamente o local da lesão, protegendo a ferida. Vejam essa camada rosa clara cobrindo o topo do membro amputado - é uma resposta de emergência do organismo.
+
+**Terceiro estágio - Blastema:** E aqui está a mágica! Após 3-5 dias, forma-se esta estrutura rosa brilhante chamada blastema - reparem no detalhe circular ao lado mostrando as células. O blastema é uma massa de células que voltaram a um estado mais primitivo, indiferenciado. É como se as células 'esquecessem' o que eram antes - células musculares, células ósseas, células de cartilagem - e voltassem a ser células-tronco capazes de se transformar em qualquer tipo celular necessário. Isso é extraordinário porque em mamíferos, células diferenciadas raramente conseguem fazer isso.
+
+**Quarto estágio - Diferenciação:** Após 7-14 dias, o blastema começa a se organizar e as células começam a se rediferenciar. Vejam na imagem como o membro está se alongando e as estruturas internas começam a aparecer - ossos, músculos, vasos sanguíneos. Cada célula 'sabe' o que precisa se tornar e onde precisa estar.
+
+**Quinto estágio - Regeneração Completa:** E finalmente, após 4-6 semanas, temos um membro completamente restaurado - idêntico ao original, com todos os ossos, músculos, nervos, vasos sanguíneos e até a pele perfeitamente regenerados. E o mais impressionante: sem nenhuma cicatriz. É uma restauração anatômica e funcional perfeita. O axolote pode usar este membro exatamente como usava o anterior."
 
 **Relação com PDF:** Página 5, parágrafo 1 - "The axolotl (Ambystoma mexicanum) is a neotenic salamander... considered a champion of regeneration..."
 
