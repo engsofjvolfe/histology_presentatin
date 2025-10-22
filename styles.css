@@ -2136,3 +2136,171 @@ td {
     padding: var(--deck-padding-v) var(--deck-padding-h);
   }
 }
+
+/* Tablets landscape e telas médias */
+@media (max-width: 1024px) {
+  /* content-2col-split mantém 2 colunas mas com gap menor */
+  .content-2col-split {
+    gap: clamp(12px, 2vh, 18px);
+  }
+}
+
+/* Tablets portrait e pequenos laptops */
+@media (max-width: 768px) {
+  /* content-2col-split vira 1 coluna em telas estreitas */
+  .content-2col-split {
+    grid-template-columns: 1fr;
+    gap: clamp(14px, 2.2vh, 20px);
+  }
+
+  /* content-grid-2col também vira 1 coluna (já tratado em 900px mas reforçando) */
+  .content-grid-2col,
+  .index-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  /* Imagens dos slides 3, 7, 8 mantêm proporção */
+  [data-slide="3"] .image-container,
+  [data-slide="7"] .image-container,
+  [data-slide="8"] .image-container {
+    max-height: 50vh;
+  }
+
+  /* Ajusta padding em telas menores */
+  .slide {
+    padding: clamp(20px, 3vh, 32px) clamp(24px, 4vw, 40px);
+  }
+
+  /* Grids de 4 colunas viram 2 colunas */
+  .pathways-grid,
+  .advantages-grid,
+  .bmp-members {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile landscape */
+@media (max-width: 600px) and (orientation: landscape) {
+  .slide-title {
+    font-size: clamp(1.1rem, 3.5vh, 1.4rem);
+    margin-bottom: clamp(8px, 1.5vh, 12px);
+  }
+
+  h3 {
+    font-size: clamp(0.95rem, 2.2vh, 1.1rem);
+  }
+
+  li, p {
+    font-size: clamp(0.8rem, 1.8vh, 0.9rem);
+  }
+
+  /* Reduz espaçamento vertical */
+  .content-2col-split {
+    gap: clamp(10px, 1.8vh, 14px);
+  }
+}
+
+/* Mobile portrait */
+@media (max-width: 600px) {
+  /* Fontes um pouco maiores para legibilidade em telas pequenas */
+  .slide-title {
+    font-size: clamp(1.3rem, 4vh, 1.6rem);
+  }
+
+  h3 {
+    font-size: clamp(1rem, 2.5vh, 1.15rem);
+  }
+
+  li, p {
+    font-size: clamp(0.85rem, 2vh, 0.95rem);
+  }
+
+  /* Padding mais compacto */
+  .slide {
+    padding: clamp(16px, 2.5vh, 24px) clamp(20px, 3.5vw, 28px);
+  }
+
+  /* Badges e cards com padding reduzido */
+  .cell-type-card,
+  .function-card,
+  .pathway-card,
+  .model-card,
+  .organism-info {
+    padding: clamp(10px, 1.8vh, 14px);
+  }
+
+  /* Todos os grids viram 1 coluna em mobile */
+  .pathways-grid,
+  .advantages-grid,
+  .bmp-members,
+  .content-grid-2col,
+  .index-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Imagens ocupam altura razoável sem dominar tela */
+  [data-slide="3"] .image-container,
+  [data-slide="7"] .image-container,
+  [data-slide="8"] .image-container {
+    max-height: 45vh;
+  }
+}
+
+/* Telas muito pequenas ou muito curtas */
+@media (max-width: 480px), (max-height: 600px) {
+  :root {
+    --deck-padding-v: 12px;
+    --deck-padding-h: 16px;
+  }
+
+  .slide {
+    padding: var(--deck-padding-v) var(--deck-padding-h);
+  }
+
+  .slide-title {
+    font-size: clamp(1.1rem, 3.2vh, 1.35rem);
+    margin-bottom: clamp(6px, 1.2vh, 10px);
+  }
+
+  /* Compacta listas */
+  ul, ol {
+    gap: clamp(4px, 0.8vh, 6px);
+  }
+
+  li {
+    font-size: clamp(0.78rem, 1.6vh, 0.88rem);
+    line-height: 1.35;
+  }
+}
+
+/* Ajustes adicionais para orientação portrait em geral */
+@media (orientation: portrait) {
+  /* Garante que slides não estourem em altura */
+  .slide-content {
+    overflow-y: auto;
+    max-height: calc(100vh - 80px); /* Espaço para header/footer */
+  }
+
+  /* Garante scroll suave se necessário */
+  .slide-content::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .slide-content::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  .slide-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* Ajustes para telas muito largas (previne conteúdo muito espaçado) */
+@media (min-width: 1920px) {
+  .slide {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
