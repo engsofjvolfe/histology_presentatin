@@ -2051,6 +2051,57 @@ td {
   font-size: clamp(0.95rem, 1.58vh, 0.98rem);
 }
 
+/* Slide 3: Imagem de estrutura óssea */
+[data-slide="3"] .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+[data-slide="3"] .image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Slide 7: Imagem de organismos modelo */
+[data-slide="7"] .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+[data-slide="7"] .image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Slide 8: Imagem de regeneração axolote - altura total */
+[data-slide="8"] .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+[data-slide="8"] .image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
 /* ==========================================================================
    RESPONSIVIDADE
    ========================================================================== */
