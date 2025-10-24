@@ -1,0 +1,576 @@
+/* ==========================================
+   CORREÇÃO DE OVERFLOW (slides 11,18,19,21,22,23,25)
+   ========================================== */
+
+/* ==========================================
+   SLIDE 11: XENOPUS - Card único centralizado
+   ========================================== */
+
+[data-slide="11"] .slide-content {
+  justify-content: center;
+  align-items: center;
+}
+
+[data-slide="11"] .organism-detail {
+  max-width: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.5vh, 14px);
+}
+
+[data-slide="11"] .capacity-badge {
+  padding: clamp(5px, 0.9vh, 8px) clamp(10px, 1.8vw, 16px);
+  font-size: clamp(0.78rem, 1.4vh, 0.9rem);
+  margin-bottom: clamp(8px, 1.2vh, 12px);
+}
+
+[data-slide="11"] .organism-info {
+  padding: clamp(14px, 2.2vh, 20px);
+}
+
+[data-slide="11"] .organism-info h3 {
+  font-size: clamp(1.3rem, 1.95vh, 1.28rem);
+  margin-bottom: clamp(8px, 1.3vh, 12px);
+}
+
+[data-slide="11"] .organism-info ul {
+  margin: 0;
+  padding-left: clamp(18px, 2.5vw, 24px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(5px, 0.9vh, 8px);
+}
+
+[data-slide="11"] .organism-info li {
+  font-size: clamp(1.08rem, 1.6vh, 1.05rem);
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+/* ==========================================
+   SLIDE 18: FGF23 - Overflow corrigido
+   ========================================== */
+
+[data-slide="18"] .content-2col-balanced {
+  gap: clamp(14px, 2.2vh, 20px);
+  align-items: start;
+}
+
+[data-slide="18"] .condensed-section-balanced {
+  padding: clamp(10px, 1.7vh, 15px);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1vh, 9px);
+}
+
+[data-slide="18"] .condensed-section-balanced h3 {
+  font-size: clamp(1.18rem, 1.75vh, 1.22rem);
+  margin-bottom: clamp(5px, 0.85vh, 8px);
+  line-height: 1.25;
+}
+
+[data-slide="18"] .condensed-section-balanced h4 {
+  font-size: clamp(1.05rem, 1.55vh, 1.08rem);
+  margin-top: clamp(5px, 0.85vh, 8px);
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+  line-height: 1.3;
+}
+
+[data-slide="18"] .condensed-section-balanced p {
+  font-size: clamp(0.95rem, 1.45vh, 0.98rem);
+  line-height: 1.35;
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+}
+
+[data-slide="18"] .condensed-section-balanced ul {
+  margin: 0;
+  padding-left: clamp(18px, 2.5vw, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 0.6vh, 5px);
+}
+
+[data-slide="18"] .condensed-section-balanced li {
+  font-size: clamp(0.92rem, 1.42vh, 0.95rem);
+  line-height: 1.32;
+  margin-bottom: 0;
+}
+
+[data-slide="18"] .data-cards-medium {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(8px, 1.4vh, 12px);
+  margin: clamp(6px, 1vh, 9px) 0;
+}
+
+[data-slide="18"] .data-card-medium {
+  padding: clamp(8px, 1.4vh, 12px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4px, 0.7vh, 6px);
+}
+
+[data-slide="18"] .data-card-medium h4 {
+  font-size: clamp(0.95rem, 1.48vh, 1rem);
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+[data-slide="18"] .data-card-medium p {
+  font-size: clamp(0.85rem, 1.35vh, 0.88rem);
+  line-height: 1.3;
+  margin: 0;
+}
+
+[data-slide="18"] .info-highlight-balanced {
+  padding: clamp(7px, 1.3vh, 10px);
+  font-size: clamp(0.88rem, 1.4vh, 0.92rem);
+  margin: clamp(5px, 0.9vh, 8px) 0;
+  line-height: 1.35;
+}
+
+/* ==========================================
+   SLIDE 19: VIA WNT - Overflow corrigido
+   ========================================== */
+
+[data-slide="19"] .content-2col-balanced {
+  gap: clamp(14px, 2.2vh, 20px);
+}
+
+[data-slide="19"] .condensed-section-balanced {
+  padding: clamp(10px, 1.7vh, 15px);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1vh, 9px);
+}
+
+[data-slide="19"] .condensed-section-balanced h3 {
+  font-size: clamp(1.18rem, 1.75vh, 1.22rem);
+  margin-bottom: clamp(5px, 0.85vh, 8px);
+  line-height: 1.25;
+}
+
+[data-slide="19"] .condensed-section-balanced h4 {
+  font-size: clamp(1.05rem, 1.55vh, 1.08rem);
+  margin-top: clamp(5px, 0.85vh, 8px);
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+  line-height: 1.3;
+}
+
+[data-slide="19"] .condensed-section-balanced p {
+  font-size: clamp(0.95rem, 1.45vh, 0.98rem);
+  line-height: 1.35;
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+}
+
+[data-slide="19"] .condensed-section-balanced ul {
+  margin: 0;
+  padding-left: clamp(18px, 2.5vw, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 0.6vh, 5px);
+}
+
+[data-slide="19"] .condensed-section-balanced li {
+  font-size: clamp(0.92rem, 1.42vh, 0.95rem);
+  line-height: 1.32;
+  margin-bottom: 0;
+}
+
+[data-slide="19"] .condensed-section-balanced ul ul {
+  margin-top: clamp(3px, 0.6vh, 5px);
+  padding-left: clamp(16px, 2.2vw, 20px);
+  gap: clamp(2px, 0.5vh, 4px);
+}
+
+[data-slide="19"] .condensed-section-balanced ul ul li {
+  font-size: clamp(0.88rem, 1.38vh, 0.92rem);
+  line-height: 1.3;
+}
+
+[data-slide="19"] .info-highlight-balanced {
+  padding: clamp(7px, 1.3vh, 10px);
+  font-size: clamp(0.88rem, 1.4vh, 0.92rem);
+  margin: clamp(5px, 0.9vh, 8px) 0;
+  line-height: 1.35;
+}
+
+[data-slide="19"] .section-divider-balanced {
+  margin: clamp(6px, 1.1vh, 9px) 0;
+}
+
+/* ==========================================
+   SLIDE 21: VIA BMP - Overflow corrigido
+   ========================================== */
+
+[data-slide="21"] .content-2col-balanced {
+  gap: clamp(14px, 2.2vh, 20px);
+}
+
+[data-slide="21"] .condensed-section-balanced {
+  padding: clamp(10px, 1.7vh, 15px);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1vh, 9px);
+}
+
+[data-slide="21"] .condensed-section-balanced h3 {
+  font-size: clamp(1.18rem, 1.75vh, 1.22rem);
+  margin-bottom: clamp(5px, 0.85vh, 8px);
+  line-height: 1.25;
+}
+
+[data-slide="21"] .condensed-section-balanced h4 {
+  font-size: clamp(1.05rem, 1.55vh, 1.08rem);
+  margin-top: clamp(5px, 0.85vh, 8px);
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+  line-height: 1.3;
+}
+
+[data-slide="21"] .condensed-section-balanced p {
+  font-size: clamp(0.95rem, 1.45vh, 0.98rem);
+  line-height: 1.35;
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+}
+
+[data-slide="21"] .condensed-section-balanced ul {
+  margin: 0;
+  padding-left: clamp(18px, 2.5vw, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 0.6vh, 5px);
+}
+
+[data-slide="21"] .condensed-section-balanced li {
+  font-size: clamp(0.92rem, 1.42vh, 0.95rem);
+  line-height: 1.32;
+  margin-bottom: 0;
+}
+
+[data-slide="21"] .data-cards-medium {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: clamp(8px, 1.4vh, 12px);
+  margin: clamp(6px, 1vh, 9px) 0;
+}
+
+[data-slide="21"] .data-card-medium {
+  padding: clamp(7px, 1.3vh, 10px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 0.6vh, 5px);
+  min-height: 0;
+}
+
+[data-slide="21"] .data-card-medium h4 {
+  font-size: clamp(0.92rem, 1.45vh, 0.98rem);
+  margin-bottom: 0;
+  line-height: 1.28;
+}
+
+[data-slide="21"] .data-card-medium p {
+  font-size: clamp(0.82rem, 1.32vh, 0.85rem);
+  line-height: 1.28;
+  margin: 0;
+}
+
+[data-slide="21"] .info-highlight-balanced {
+  padding: clamp(7px, 1.3vh, 10px);
+  font-size: clamp(0.88rem, 1.4vh, 0.92rem);
+  margin: clamp(5px, 0.9vh, 8px) 0;
+  line-height: 1.35;
+}
+
+[data-slide="21"] .section-divider-balanced {
+  margin: clamp(6px, 1.1vh, 9px) 0;
+}
+
+/* ==========================================
+   SLIDE 22: BMP APLICAÇÕES CLÍNICAS - Overflow corrigido
+   ========================================== */
+
+[data-slide="22"] .slide-content {
+  gap: clamp(12px, 2vh, 18px);
+}
+
+[data-slide="22"] .bmp-clinical {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(12px, 2vh, 18px);
+  flex: 1;
+  min-height: 0;
+}
+
+[data-slide="22"] .approved-therapies,
+[data-slide="22"] .considerations {
+  padding: clamp(12px, 2vh, 18px);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 1.4vh, 12px);
+  flex: 1;
+  min-height: 0;
+}
+
+[data-slide="22"] .approved-therapies h3,
+[data-slide="22"] .considerations h3 {
+  font-size: clamp(1.22rem, 1.82vh, 1.28rem);
+  margin-bottom: clamp(6px, 1.1vh, 9px);
+  line-height: 1.28;
+}
+
+[data-slide="22"] .therapy-item {
+  padding: clamp(8px, 1.5vh, 12px);
+  font-size: clamp(0.92rem, 1.48vh, 0.98rem);
+  line-height: 1.38;
+  margin-bottom: clamp(6px, 1.1vh, 9px);
+  border-radius: 6px;
+}
+
+[data-slide="22"] .therapy-item:last-child {
+  margin-bottom: 0;
+}
+
+[data-slide="22"] .pro-con {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(10px, 1.8vh, 14px);
+}
+
+[data-slide="22"] .pro,
+[data-slide="22"] .con {
+  padding: clamp(9px, 1.6vh, 13px);
+  font-size: clamp(0.92rem, 1.48vh, 0.98rem);
+  line-height: 1.38;
+  border-radius: 6px;
+}
+
+/* ==========================================
+   SLIDE 23: VEGF - Overflow corrigido
+   ========================================== */
+
+[data-slide="23"] .content-2col-balanced {
+  gap: clamp(14px, 2.2vh, 20px);
+}
+
+[data-slide="23"] .condensed-section-balanced {
+  padding: clamp(10px, 1.7vh, 15px);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1vh, 9px);
+}
+
+[data-slide="23"] .condensed-section-balanced h3 {
+  font-size: clamp(1.18rem, 1.75vh, 1.22rem);
+  margin-bottom: clamp(5px, 0.85vh, 8px);
+  line-height: 1.25;
+}
+
+[data-slide="23"] .condensed-section-balanced h4 {
+  font-size: clamp(1.05rem, 1.55vh, 1.08rem);
+  margin-top: clamp(5px, 0.85vh, 8px);
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+  line-height: 1.3;
+}
+
+[data-slide="23"] .condensed-section-balanced p {
+  font-size: clamp(0.95rem, 1.45vh, 0.98rem);
+  line-height: 1.35;
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+}
+
+[data-slide="23"] .condensed-section-balanced ul {
+  margin: 0;
+  padding-left: clamp(18px, 2.5vw, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 0.6vh, 5px);
+}
+
+[data-slide="23"] .condensed-section-balanced li {
+  font-size: clamp(0.92rem, 1.42vh, 0.95rem);
+  line-height: 1.32;
+  margin-bottom: 0;
+}
+
+[data-slide="23"] .data-cards-medium {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(8px, 1.4vh, 12px);
+  margin: clamp(6px, 1vh, 9px) 0;
+}
+
+[data-slide="23"] .data-card-medium {
+  padding: clamp(8px, 1.4vh, 12px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4px, 0.7vh, 6px);
+}
+
+[data-slide="23"] .data-card-medium h4 {
+  font-size: clamp(0.95rem, 1.48vh, 1rem);
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+[data-slide="23"] .data-card-medium p {
+  font-size: clamp(0.85rem, 1.35vh, 0.88rem);
+  line-height: 1.3;
+  margin: 0;
+}
+
+[data-slide="23"] .info-highlight-balanced {
+  padding: clamp(7px, 1.3vh, 10px);
+  font-size: clamp(0.88rem, 1.4vh, 0.92rem);
+  margin: clamp(5px, 0.9vh, 8px) 0;
+  line-height: 1.35;
+}
+
+[data-slide="23"] .section-divider-balanced {
+  margin: clamp(6px, 1.1vh, 9px) 0;
+}
+
+/* ==========================================
+   SLIDE 25: CONCLUSÕES - Overflow corrigido
+   ========================================== */
+
+[data-slide="25"] .content-2col-balanced {
+  gap: clamp(14px, 2.2vh, 20px);
+  align-items: start;
+}
+
+[data-slide="25"] .condensed-section-balanced {
+  padding: clamp(10px, 1.7vh, 15px);
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1vh, 9px);
+}
+
+[data-slide="25"] .condensed-section-balanced h3 {
+  font-size: clamp(1.18rem, 1.75vh, 1.22rem);
+  margin-bottom: clamp(5px, 0.85vh, 8px);
+  line-height: 1.25;
+}
+
+[data-slide="25"] .condensed-section-balanced h4 {
+  font-size: clamp(1.05rem, 1.55vh, 1.08rem);
+  margin-top: clamp(5px, 0.85vh, 8px);
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+  line-height: 1.3;
+}
+
+[data-slide="25"] .condensed-section-balanced p {
+  font-size: clamp(0.95rem, 1.45vh, 0.98rem);
+  line-height: 1.35;
+  margin-bottom: clamp(4px, 0.7vh, 6px);
+}
+
+[data-slide="25"] .condensed-section-balanced ul {
+  margin: 0;
+  padding-left: clamp(18px, 2.5vw, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 0.6vh, 5px);
+}
+
+[data-slide="25"] .condensed-section-balanced li {
+  font-size: clamp(0.92rem, 1.42vh, 0.95rem);
+  line-height: 1.32;
+  margin-bottom: 0;
+}
+
+[data-slide="25"] .data-cards-medium {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: clamp(8px, 1.4vh, 12px);
+  margin: clamp(6px, 1vh, 9px) 0;
+}
+
+[data-slide="25"] .data-card-medium {
+  padding: clamp(7px, 1.3vh, 10px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 0.6vh, 5px);
+  min-height: 0;
+}
+
+[data-slide="25"] .data-card-medium h4 {
+  font-size: clamp(0.92rem, 1.45vh, 0.98rem);
+  margin-bottom: 0;
+  line-height: 1.28;
+}
+
+[data-slide="25"] .data-card-medium p {
+  font-size: clamp(0.82rem, 1.32vh, 0.85rem);
+  line-height: 1.28;
+  margin: 0;
+}
+
+[data-slide="25"] .info-highlight-balanced {
+  padding: clamp(7px, 1.3vh, 10px);
+  font-size: clamp(0.88rem, 1.4vh, 0.92rem);
+  margin: clamp(5px, 0.9vh, 8px) 0;
+  line-height: 1.35;
+}
+
+[data-slide="25"] .section-divider-balanced {
+  margin: clamp(6px, 1.1vh, 9px) 0;
+}
+
+[data-slide="25"] .final-slide {
+  text-align: center;
+  padding: clamp(10px, 1.8vh, 16px) 0;
+  flex-shrink: 0;
+}
+
+[data-slide="25"] .final-slide h2 {
+  font-size: clamp(1.6rem, 3.5vh, 2.2rem);
+  margin-bottom: clamp(6px, 1.1vh, 10px);
+  line-height: 1.2;
+}
+
+[data-slide="25"] .final-slide p {
+  font-size: clamp(1.05rem, 2vh, 1.4rem);
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* ==========================================
+   RESPONSIVIDADE - Apenas slides corrigidos
+   ========================================== */
+
+@media (max-width: 1024px) {
+  [data-slide="18"] .data-cards-medium,
+  [data-slide="21"] .data-cards-medium,
+  [data-slide="23"] .data-cards-medium,
+  [data-slide="25"] .data-cards-medium {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  [data-slide="22"] .pro-con {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-slide="11"] .organism-detail {
+    max-width: 100%;
+  }
+
+  [data-slide="18"] .content-2col-balanced,
+  [data-slide="19"] .content-2col-balanced,
+  [data-slide="21"] .content-2col-balanced,
+  [data-slide="23"] .content-2col-balanced,
+  [data-slide="25"] .content-2col-balanced {
+    grid-template-columns: 1fr;
+  }
+}
